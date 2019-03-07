@@ -157,6 +157,27 @@
         #cssmenu ul ul a:hover {    
         color: #e94f31;
         }
+
+        .card {
+            padding: 10px;
+
+        }
+        .card span {
+            display: block;
+            padding: 10px 10px 10px 25px;
+            color: #676767;
+            font-size: .8em;
+            font-weight: normal;
+        }
+
+        .card input {
+            display: block;
+            margin-left: 25px;
+            margin-top: 20px;
+            padding: 7px;
+        }
+
+
         </style>
     </head>
     <body>
@@ -167,24 +188,24 @@
                 <li><a href='#'><span>Category 1</span></a>
                 <ul>
                     <li>
-                        <span>Family 1</span><br/><br/>
-                        <div>
+                        <div class="card">
+                            <span>Family 1</span>
                             <img src="./NBS_MumfordWoodLtd_WoodWndwUnits_ConservationBoxSashWindow.jpg" style="height: 100px;width: 100px;">
-                            <a href="./NBS_MumfordWoodLtd_WoodWndwUnits_ConservationBoxSashWindow.rfa" >Load</a>
+                            <input type="button" value="Load" onclick="javascript:if(window.external) if(window.external.ImportObject) window.external.ImportObject('https://www.lagarsoft.com/demo1/NBS_MumfordWoodLtd_WoodWndwUnits_ConservationBoxSashWindow.rfa','NBS_MumfordWoodLtd_WoodWndwUnits_ConservationBoxSashWindow.rfa');" >
                         </div>
                     </li>
                     <li>
-                        <span>Family 2</span><br/><br/>
-                        <div>
+                        <div class="card">
+                            <span>Family 2</span>
                             <img src="./NBS_MumfordWoodLtd_WoodWndwUnits_ConservationSpringSashWindow.jpg" style="height: 100px;width: 100px;">
-                            <a href="./NBS_MumfordWoodLtd_WoodWndwUnits_ConservationSpringSashWindow.rfa" >Load</a>
+                            <input type="button" value="Load" onclick="javascript:if(window.external) if(window.external.ImportObject) window.external.ImportObject('https://www.lagarsoft.com/demo1/NBS_MumfordWoodLtd_WoodWndwUnits_ConservationSpringSashWindow.rfa','NBS_MumfordWoodLtd_WoodWndwUnits_ConservationSpringSashWindow.rfa');" >
                         </div>
                     </li>
                     <li>
-                        <span>Family 3</span><br/><br/>
-                        <div>
+                        <div class="card">
+                            <span>Family 3</span>
                             <img src="./NBS_SynsealGroup_ExtWndwSym_WINSquareStandard_TiltAndTurn.jpg" style="height: 100px;width: 100px;">
-                            <a href="./NBS_SynsealGroup_ExtWndwSym_WINSquareStandard_TiltAndTurn.rfa" >Load</a>
+                            <input type="button" value="Load" onclick="javascript:if(window.external) if(window.external.ImportObject) window.external.ImportObject('https://www.lagarsoft.com/demo1/NBS_SynsealGroup_ExtWndwSym_WINSquareStandard_TiltAndTurn.rfa','NBS_SynsealGroup_ExtWndwSym_WINSquareStandard_TiltAndTurn.rfa');" >
                         </div>
                     </li>
                 </ul>
