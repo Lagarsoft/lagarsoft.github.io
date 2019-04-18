@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pintrack.IO</title>
+
+
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.0.9/mapbox-gl-draw.js'></script>
+<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.0.9/mapbox-gl-draw.css' type='text/css' />
+
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark sticky-top  flex-md-nowrap p-0">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#"><img src="assets/images/pintrack.io.png" style="width: 27px; height: 26px;"/> Pintrack.IO</a>
+      <input class="form-control-dark w-25 ml-auto form-rounded" type="text" placeholder="Search by keywords..." aria-label="Search by keywords...">
+      <div style="position: relative; left: -29px; top: 3px;">
+              <span class="material-icons">search</span>
+
+      </div>
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link" href="#"><img src="assets/images/welcome.png" style="width: 150px; height: 44px;"/></a>
+
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+              <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Menu</span>
+              <a class="d-flex align-items-center text-muted" href="#">
+                <span data-feather="plus-circle"></span>
+              </a>
+            </h6>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  <span data-feather="home"></span>
+                  Dashboard <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file"></span>
+                  Notifications
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="shopping-cart"></span>
+                  Support Requests
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="users"></span>
+                  Campaigns
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="bar-chart-2"></span>
+                  Schedule
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="layers"></span>
+                  Users
+                </a>
+              </li>
+            </ul>
+            <div class="dropdown-divider"></div>
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Saved reports</span>
+              <a class="d-flex align-items-center text-muted" href="#">
+                <span data-feather="plus-circle"></span>
+              </a>
+            </h6>
+            <ul class="nav flex-column mb-2">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Current month
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Last quarter
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Realtime Progress
+                </a>
+              </li>
+              
+            </ul>
+            <div class="dropdown-divider"></div>
+
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Session</span>
+              <a class="d-flex align-items-center text-muted" href="#">
+                <span data-feather="plus-circle"></span>
+              </a>
+            </h6>
+            <ul class="nav flex-column mb-2">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Settings
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Logout
+                </a>
+              </li>
+              
+            </ul>
+
+          </div>
+        </nav>
+
+        <main role="main" class="container-fluid h-100">
+          <div class="">
+            <div class="row justify-content-center h-100">
+              <div id='map' class="container-fluid h-100"></div>
+
+            </div>
+          </div>
+
+       
+        </main>
+      </div>
+    </div>
+
+    <!-- Graphs -->
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoicGFibG9nYW5jaGFyb3YiLCJhIjoiY2p1bjd6Y3NxMHkyOTN5czhucDBjMDR3ciJ9.OfyuJ9Aevk0IvOxgyW7Fzw';
+      var map = new mapboxgl.Map({
+      container: 'map', // container id
+      style: 'mapbox://styles/mapbox/light-v10', // stylesheet location
+      center: [-122.447303, 37.753574], // starting position [lng, lat]
+      zoom: 12 // starting zoom
+      });
+
+
+      map.on('load', function () {
+       
+      map.addLayer({
+        'id': 'population',
+        'type': 'circle',
+        'source': {
+        type: 'vector',
+        url: 'mapbox://examples.8fgz4egr'
+        },
+        'source-layer': 'sf2010',
+        'paint': {
+        // make circles larger as the user zooms from z12 to z22
+        'circle-radius': {
+        'base': 1.75,
+        'stops': [[12, 2], [22, 180]]
+        },
+        // color circles by ethnicity, using a match expression
+        // https://docs.mapbox.com/mapbox-gl-js/style-spec/#expressions-match
+        'circle-color': [
+        'match',
+        ['get', 'ethnicity'],
+        'White', '#fbb03b',
+        'Black', '#223b53',
+        'Hispanic', '#e55e5e',
+        'Asian', '#3bb2d0',
+        /* other */ '#ccc'
+        ]
+        }
+      });
+      var draw = new MapboxDraw({
+        displayControlsDefault: true,
+        controls: {
+        polygon: true,
+        trash: true
+        }
+        });
+
+      map.addControl(draw);
+
+
+    });
+
+    </script>
+  
+    <script src="./assets/scripts/bundle.js"></script>
+</body>
+
+</html>
