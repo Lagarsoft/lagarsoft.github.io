@@ -1,2 +1,0 @@
-import{S as s,i as a,s as e,m as t,e as o,t as n,j as l,a as r,b as c,d as m,f as i,k as h,n as u}from"./chunk.bb64fc7e.js";function d(s){var a,e,d;return{c(){a=t(),e=o("h1"),d=n("Hello and welcome to my awesome site!"),this.h()},l(s){a=l(s,"\n\n"),e=r(s,"H1",{},!1);var t=c(e);d=l(t,"Hello and welcome to my awesome site!"),t.forEach(m),this.h()},h(){document.title="Lagarsoft - Lab"},m(s,t){i(s,a,t),i(s,e,t),h(e,d)},p:u,i:u,o:u,d(s){s&&(m(a),m(e))}}}export default class extends s{constructor(s){super(),a(this,s,null,d,e,[])}}
-//# sourceMappingURL=lab.703d312c.js.map
