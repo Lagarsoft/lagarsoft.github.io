@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="100"
+   height="100"
+   version="1.1"
+   id="svg3913"
+   sodipodi:docname="icons-instagram.svg"
+   style="fill:none"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata3919">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3917" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2039"
+     inkscape:window-height="1448"
+     id="namedview3915"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="5.4883721"
+     inkscape:cx="34.633898"
+     inkscape:cy="18.4"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg3913" />
+  <path
+     d="M 29.700272,0.271739 C 13.351499,0.271739 0,13.586957 0,29.891304 v 40.76087 C 0,86.956522 13.351499,100 29.700272,100 H 70.572207 C 86.920981,100 100,86.956522 100,70.652174 V 29.619565 C 100,13.315217 86.648501,0 70.572207,0 H 29.700272 Z M 77.384196,18.75 c 2.452316,0 4.359673,2.173913 4.359673,4.619565 0,2.445652 -1.907357,4.347826 -4.359673,4.347826 -2.724795,0 -4.632152,-1.902174 -4.632152,-4.347826 0,-2.717391 1.907357,-4.619565 4.632152,-4.619565 z M 50.13624,25.543478 a 25.06812,25 0 1 1 0,50 25.06812,25 0 0 1 0,-50 z m 0,4.619565 a 20.435967,20.380435 0 1 0 0,40.76087 20.435967,20.380435 0 0 0 0,-40.76087 z"
+     id="path3911"
+     inkscape:connector-curvature="0"
+     style="fill:#ffffff;stroke-width:2.72109079" />
+</svg>
