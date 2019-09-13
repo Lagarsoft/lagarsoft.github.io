@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "file": "client.c40da29a.css",
+  "sources": [
+    "..\\..\\..\\..\\..\\..\\src\\routes\\_layout.svelte"
+  ],
+  "sourcesContent": [
+    "<style>::-webkit-scrollbar{width:0;background:rgba(0,0,0,0)}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9yb3V0ZXMvX2xheW91dC5zdmVsdGUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0Esb0JBQ0ksT0FBVSxDQUNWLHdCQUNKIiwiZmlsZSI6InNyYy9yb3V0ZXMvX2xheW91dC5zdmVsdGUiLCJzb3VyY2VzQ29udGVudCI6WyJcclxuOjotd2Via2l0LXNjcm9sbGJhciB7XHJcbiAgICB3aWR0aDogMHB4OyAgLyogUmVtb3ZlIHNjcm9sbGJhciBzcGFjZSAqL1xyXG4gICAgYmFja2dyb3VuZDogdHJhbnNwYXJlbnQ7ICAvKiBPcHRpb25hbDoganVzdCBtYWtlIHNjcm9sbGJhciBpbnZpc2libGUgKi9cclxufVxyXG5cclxuIl19 */</style>\r\n<main>\r\n  <slot />\r\n</main>\r\n"
+  ],
+  "names": [],
+  "mappings": "AAAO,mBAAmB,CAAC,MAAM,CAAC,CAAC,WAAW,KAAK,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC"
+}
